@@ -1,0 +1,45 @@
+import pytest
+
+
+@pytest.fixture
+def test_data():
+    return [
+        {'date': '2019-08-26T10:50:58.294041',
+         'description': 'Перевод организации',
+         'from': 'Maestro 1596837868705199',
+         'id': 441945886,
+         'operationAmount': {'amount': '31957.58',
+                        'currency': {'code': 'RUB', 'name': 'руб.'}},
+         'to': 'Счёт 64686473678894779589'},
+        {'date': '2019-07-03T18:35:29.512364',
+         'description': 'Перевод организации',
+         'id': 41428829,
+         'operationAmount': {'amount': '8221.37',
+                        'currency': {'code': 'USD', 'name': 'USD'}},
+         'state': 'EXECUTED',
+         'to': 'Счёт 35383033474447895560'},
+        {'date': '2018-06-30T02:08:58.425572',
+         'description': 'Перевод организации',
+         'from': 'Счёт 75106830613657916952',
+         'id': 939719570,
+         'operationAmount': {'amount': '9824.07',
+                        'currency': {'code': 'USD', 'name': 'USD'}},
+         'state': 'EXECUTED',
+         'to': 'Счёт 11776614605963066702'},
+        {'date': '2019-04-04T23:20:05.206878',
+         'description': 'Перевод со счёта на счёт',
+         'from': 'Счёт 19708645243227258542',
+         'id': 142264268,
+         'operationAmount': {'amount': '79114.93',
+                        'currency': {'code': 'USD', 'name': 'USD'}},
+         'state': 'EXECUTED',
+         'to': 'Счёт 75651667383060284188'},
+        {'date': '2019-03-23T01:09:46.296404',
+         'description': 'Перевод со счёта на счёт',
+         'from': 'Счёт 44812258784861134719',
+         'id': 873106923,
+         'operationAmount': {'amount': '43318.34',
+                        'currency': {'code': 'RUB', 'name': 'руб.'}},
+         'state': 'EXECUTED',
+         'to': 'Счёт 74489636417521191160'}
+    ]
